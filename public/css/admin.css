@@ -1,0 +1,116 @@
+.console_administrateur {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3a616e;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  margin-left: 1%;
+  padding-bottom: 5rem;
+}
+
+.console_administrateur form {
+  display: flex;
+  border: #2a9d8f solid 2px;
+  flex-direction: column;
+  margin-left: 10rem;
+  width: 70%;
+  height: auto;
+  align-items: stretch;
+  border-radius: 60px;
+  padding: 2rem;
+  box-shadow: 0 0 20px 0 #a4a4a4;
+}
+
+.console_administrateur label {
+  font-size: 1.5rem;
+  color: #2e3f3f;
+  margin-bottom: 1rem;
+  margin-left: 2%;
+}
+.console_administrateur form input {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  padding: 10px;
+  border: 1px solid #beeded;
+  background: #ace3e5;
+  border-radius: 25px;
+  color: #406162;
+  font-size: 1.5rem;
+  box-shadow: 0 0 20px 0 #ded8d86b;
+}
+
+.console_administrateur form button {
+  margin-top: 2%;
+  margin-left: 5%;
+  padding: 10px;
+  border: 1px solid #beeded;
+  background: #cde6dc;
+  border-radius: 25px;
+  color: #406162;
+  font-size: 1.5rem;
+  box-shadow: 0 0 20px 0 #ded8d86b;
+}
+
+.console_administrateur form button:hover {
+  background-color: #2a9d8f;
+  color: #e2f1e9;
+}
+
+#liste_evenement {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#liste {
+  list-style: none;
+  text-align: center;
+  padding: 30px;
+  border: #384144 solid 2px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  margin: 5px;
+  text-align: start;
+}
+
+#liste_evenement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#liste #description {
+  max-width: 20rem;
+  max-height: 10rem;
+}
+
+#cap_span {
+  font-weight: bold;
+  color: #333736;
+}
+.button_delete {
+  padding: 15px;
+  margin: 20px;
+  border: 1px solid #dfe4e4;
+  background: #ec5757;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.button_delete:hover {
+  background: #841919;
+  color: #fff;
+}

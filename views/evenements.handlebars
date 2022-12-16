@@ -1,0 +1,23 @@
+<h1>Evenement Liste</h1>
+
+<ul id="liste_evenement">
+
+  {{#each event}}
+  <div id="liste">
+    <li>
+      <p id="nom"><span id="cap_span">Nom :</span> {{this.nom}}</p>
+      
+      <p id="description"><span id="cap_span">Description :</span> {{this.description}}</p>
+      
+      <p id="capacite"><span id="cap_span">Capacite :</span> {{this.capacite}}</p>
+      
+      <p id="date_debut"><span id="cap_span">Date Debut :</span> {{this.date_debut}}</p>
+      
+      <p id="nb_cours"><span id="cap_span">Nombre cours :</span> {{this.nb_cours}}</p>
+      
+      <input class="button_inscription" type="button" value="Sinscrire" data-id="{{this.id_cours}}">
+
+    </li>
+  </div>
+  {{/each}}
+</ul>

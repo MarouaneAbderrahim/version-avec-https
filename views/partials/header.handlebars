@@ -1,0 +1,53 @@
+<header>
+
+    <nav>
+        <ul>
+            {{#if user}}
+            <li>
+                <a href="/">Les événements</a>
+            </li>
+             {{/if}}
+            {{#if user}}
+
+            <li>
+
+                <a href="/mesevenements">Mes événements inscrit</a>
+            </li>
+            {{/if}}
+              {{#if aAcces}}
+            <li>
+              
+                <a href="/admin">Admin</a>
+               
+            </li>
+             {{/if}}
+            <li>
+                {{#unless user}}
+                
+                <a href="/inscription">Inscription</a>
+
+            {{/unless}}
+
+            </li>
+                        {{#unless user}}
+
+            <li>
+
+
+
+                <a href="/connexion">Connexion</a>
+
+            </li>
+                        {{/unless}}
+
+                        {{#if user}}
+
+            <li>
+                 <form method="post" action="/deconnexion">
+                    <input type="submit" value="Déconnexion">
+                </form>
+            </li>
+                      {{/if}}
+        </ul>
+    </nav>
+</header>

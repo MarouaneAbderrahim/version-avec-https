@@ -1,0 +1,84 @@
+{{#if aAcces}}
+
+<div class="console_administrateur">
+  <h1>Ajouter Des Evenement</h1>
+
+  <form id="form_admin">
+    <label for="nom">Nom de l'evenement</label>
+    <input type="text" id="nom" name="nom" minlength="10" maxlength="50" required />
+
+    <label for="date">Date de l'evenement</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="capacite">Capacite </label>
+    <input type="number" id="capacite" name="capacite" min="1" max="30" required />
+
+    <label for="description">Description de l'Événement</label>
+    <input type="text" id="description" name="description" minlength="10" maxlength="200" required />
+
+    <label for="nb_cours">Nombre de cours</label>
+    <input type="number" id="nb_cours" name="nb_cours" min="1" max="30" required />
+    <button type="submit">Ajouter</button>
+
+  </form>
+</div>
+
+<h1>Affichage des Événements</h1>
+
+<ul id="liste_evenement">
+
+  {{#each event}}
+  <div id="liste">
+    <li>
+
+      <p id="nom"><span id="cap_span">Nom :</span> {{this.nom}}</p>
+      
+      <p id="description"><span id="cap_span">Description :</span> {{this.description}}</p>
+      
+      <p id="capacite"><span id="cap_span">Capacite :</span> {{this.capacite}}</p>
+      
+      <p id="date_debut"><span id="cap_span">Date Debut :</span> {{this.date_debut}}</p>
+      
+      <p id="nb_cours"><span id="cap_span">Nombre cours :</span> {{this.nb_cours}}</p>
+      
+      <input class="button_delete" type="button" value="delete" data-id="{{this.id_cours}}">
+
+    </li>
+  </div>
+  {{/each}}
+</ul>
+
+<h1>Affichage des Inscriptions</h1>
+
+
+  {{#each usercours}}
+
+
+<div id="liste">
+
+
+  <div id="liste_user">
+    <li>
+      <p id="prenom"><span id="cap_span">Prenom :</span> {{prenom}}</p>
+      
+      <p id="nom"><span id="cap_span">Nom :</span> {{nom_utilisateur}}</p>
+      
+      <p id="courriel"><span id="cap_span">Courriel :</span> {{courriel}}</p>
+      
+      <p id="nom_cours"><span id="cap_span">Nom Cours :</span> {{nom_cours}}</p>
+      
+
+    </li>
+
+  </div>
+
+</div> 
+
+    
+
+
+{{/each}}
+
+
+  {{/if}}
+
